@@ -1,5 +1,4 @@
 ## Imersão Full Cycle && Full Stack
-<hr>
 
 Este repositório apenas é para armazenar o projeto completo criado durante a minha participação da Imersão Full Cycle && Full Stack.
 

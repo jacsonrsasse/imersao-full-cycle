@@ -56,3 +56,19 @@
  - Bidirecional e Assíncrono
  - Baixa latência
  - Utiliza um contrato (arquivo .proto)
+ - Suporte a Streaming
+
+
+<hr>
+
+## Arquivo Makefile 
+
+Esse arquivo está na raiz do projeto, ele usará as extensões definidas no arquivo Dockerfile para compilação do `.proto` para outra linguagem de programação.
+ - Veja no arquivo Dockerfile a definição do `protobuf-compiler`, é ele quem irá fazer esse trabalho em conjunto com os seus devidos plugins, no caso o `protoc-gen-go-grpc` e o `protoc-gen-go`.
+
+### Comandos
+ - GEN -> comando a ser executado
+ - protoc -> compilador
+ - --proto_path -> caminho relativo a ser utilizado para achar os protofiles
+ - --go_out -> onde serão salvas as mensagens
+ - --go-grpc_out -> output do método de serviço
